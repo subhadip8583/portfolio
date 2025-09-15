@@ -21,13 +21,13 @@ export default function Navbar() {
           {/* Logo always left */}
           <a
             href="#hero"
-            className="font-bold text-xl sm:text-2xl md:text-base lg:text-lg xl:text-xl text-white hover:text-cyan-400 transition-colors duration-300"
+            className="font-bold text-xl sm:text-2xl md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-white hover:text-cyan-400 transition-colors duration-300"
           >
             Subhadip Adhikary
           </a>
 
           {/* Desktop Menu */}
-          <ul className="md:ml-3 hidden md:flex space-x-8 md:text-sm lg:text-base xl:text-lg md:space-x-5 font-medium">
+          <ul className="md:ml-3 hidden md:flex space-x-8 md:text-sm lg:text-base xl:text-lg 2xl:text-xl md:space-x-5 font-medium">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <a
