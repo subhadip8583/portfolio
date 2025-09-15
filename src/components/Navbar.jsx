@@ -17,19 +17,17 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50">
       <nav className="backdrop-blur-md bg-black shadow-md transition-colors duration-300">
-        <div className="container mx-auto flex items-center justify-between px-6 sm:px-10 md:px-20 py-4">
-          
+        <div className="container mx-auto flex items-center justify-between px-6 sm:px-10 md:px-6 py-4">
           {/* Logo always left */}
-         <a
-  href="#hero"
-  className="font-bold text-xl sm:text-2xl text-white hover:text-cyan-400 transition-colors duration-300 mr-auto"
->
-  Subhadip Adhikary
-</a>
-
+          <a
+            href="#hero"
+            className="font-bold text-xl sm:text-2xl md:text-base lg:text-lg xl:text-xl text-white hover:text-cyan-400 transition-colors duration-300"
+          >
+            Subhadip Adhikary
+          </a>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-8 font-medium">
+          <ul className="md:ml-3 hidden md:flex space-x-8 md:text-sm lg:text-base xl:text-lg md:space-x-5 font-medium">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <a
@@ -47,7 +45,7 @@ export default function Navbar() {
             <a
               href="/Subhadip_Btech_Compsc.pdf"
               download
-              className="px-5 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg shadow-md transition-all duration-300"
+              className="ml-3 px-5 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg shadow-md transition-all duration-300"
             >
               Resume
             </a>
