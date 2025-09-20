@@ -21,7 +21,9 @@
     "react-dom": "^19.1.1",
     "react-hot-toast": "^2.6.0",
     "react-router-dom": "^7.9.0",
+    "react-slick": "^0.31.0",
     "react-typed": "^2.0.12",
+    "slick-carousel": "^1.8.1",
     "three": "^0.180.0"
   },
   "devDependencies": {
