@@ -78,7 +78,7 @@ transition-all duration-300 shadow-lg"
 
       {/* Right: Image */}
       <motion.div
-       className="w-60 h-60 rounded-full shadow-lg border-4 border-accent dark:border-accent-dark mt-8 md:mt-0 md:ml-12 justify-center bg-[#EBEBEB]"
+       className="w-60 h-60 rounded-full shadow-lg border-4 border-accent dark:border-accent-dark mt-8 md:mt-0 md:ml-12 justify-center bg-[#737E88] "
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}

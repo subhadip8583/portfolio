@@ -17,7 +17,7 @@ export default function About() {
           <img
             src={profile}
             alt="Profile"
-            className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-gray-900 hover:scale-105 transition-transform duration-300"
+             className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover object-top shadow-lg border-4 border-gray-900 hover:scale-105 transition-transform duration-300"
           />
         </div>
 
