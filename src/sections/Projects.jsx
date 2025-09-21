@@ -12,6 +12,10 @@ import project15 from "../assets/project15.png";
 import project21 from "../assets/project21.png";
 import project22 from "../assets/project22.png";
 import project31 from "../assets/project31.png";
+import project4 from "../assets/project4.png";
+import project41 from "../assets/project41.png";
+import project42 from "../assets/project42.png";
+import project43 from "../assets/project43.png";
 
 export default function Projects() {
  const projects = [
@@ -64,6 +68,26 @@ export default function Projects() {
     demo: "https://inotebook-frontend-gray.vercel.app/login",
     github: "https://github.com/subhadip8583/inotebook_frontend",
   },
+
+  {
+    title: "FreshMart E-Commerce UI",
+    techStack: "React.js, Tailwind CSS",
+    description: [
+        "Developed a responsive e-commerce frontend using React.js and Tailwind CSS",
+        "Implemented reusable components and modular design for scalability",
+        "Dynamic product listing with interactive cards and hover effects",
+        "Client-side routing using React Router for smooth navigation",
+        "State management with React hooks to handle cart functionality",
+        "Fully responsive layout compatible with mobile, tablet, and desktop devices",
+        "Optimized UI for performance and user experience",
+    ],
+    image: project4,
+    images: [project4, project41, project42, project43],
+    tech: ["React", "Tailwind CSS"],
+    demo: "https://freshmart12.netlify.app",
+    github: "https://github.com/subhadip8583/webhibe-assignment"
+},
+
 ];
 
 
