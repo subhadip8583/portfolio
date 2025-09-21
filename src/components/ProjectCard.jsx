@@ -35,6 +35,7 @@ function PrevArrow({ onClick }) {
 export default function ProjectCard({
   title,
   description,
+  techStack,
   image,
   tech = [],
   demo,
@@ -130,12 +131,12 @@ export default function ProjectCard({
           <div
             className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl 
                        w-full max-w-6xl relative grid grid-cols-1 lg:grid-cols-2 overflow-hidden
-                       mb-10"
+                       mb-1"
           >
             {/* Close button */}
-           <button
-  onClick={() => setIsOpen(false)}
-  className="absolute lg:top-4 lg:right-4 lg:bottom-auto lg:left-auto 
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute lg:top-4 lg:right-4 lg:bottom-auto lg:left-auto 
              bottom-4 right-4
              w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center 
              rounded-full
@@ -145,10 +146,9 @@ export default function ProjectCard({
              hover:scale-110 hover:rotate-90 hover:shadow-teal-500/50
              transition-all duration-300 ease-in-out
              z-50"
->
-  ✖
-</button>
-
+            >
+              ✖
+            </button>
 
             {/* Image Slider */}
             <div className="w-full p-3 sm:p-4 flex items-center justify-center order-1 lg:order-none">
@@ -171,9 +171,16 @@ export default function ProjectCard({
                 {title}
               </h2>
 
-              <p className="mt-3 sm:mt-4 text-gray-700 dark:text-gray-300 text-base sm:text-lg leading-relaxed">
-                {description}
-              </p>
+              <div>
+                <p className="mt-3 font-semibold text-gray-800 dark:text-gray-200">
+                  Tech Stack: <span className="font-normal">{techStack}</span>
+                </p>
+                <ul className="mt-2 sm:mt-3 text-gray-700 dark:text-gray-300 text-base sm:text-lg leading-relaxed list-disc pl-6">
+                  {description.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
+              </div>
 
               {/* Tech stack in modal */}
               <div className="mt-4 sm:mt-6 flex flex-wrap gap-2">
