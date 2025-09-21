@@ -5,15 +5,15 @@ import SectionTitle from "../components/SectionTitle";
 export default function Skills() {
   const skills = {
     Languages: [
-      { name: "Java", rating: 4 },
+      { name: "Java", rating: 5 },
       { name: "JavaScript", rating: 4 },
-      { name: "SQL", rating: 3 },
+      { name: "SQL", rating: 4 },
     ],
     Subjects: [
-      { name: "Software Engineering", rating: 4 },
+      { name: "Software Engineering", rating: 5 },
       { name: "RDBMS", rating: 4 },
       { name: "Object-Oriented Programming", rating: 4 },
-      { name: "DSA", rating: 3 },
+      { name: "DSA", rating: 4 },
     ],
     "Libraries & Frameworks": [
       { name: "Node.js", rating: 4 },
